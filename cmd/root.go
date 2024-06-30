@@ -15,14 +15,12 @@ import (
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "pos_go_stress_test",
-	Short: "A brief description of your application",
-	Long: `A longer description that spans multiple lines and likely contains
-examples and usage of using your application. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	Use:   "stress",
+	Short: "Sistema CLI em Go para realizar testes de carga em um serviço web",
+	Long: `Sistema CLI em Go para realizar testes de carga em um serviço web.
+	
+O usuário deverá fornecer a URL do serviço, o número total de requests e a quantidade de chamadas simultâneas.
+Serviço irá retornar um relatório com tempo e as responses obtidas.`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	Run: func(cmd *cobra.Command, args []string) {
